@@ -1,0 +1,20 @@
+@use "global" as *;
+
+.p-works {
+  text-align: center;
+}
+
+.p-works__items {
+  margin-top: rem(40);
+  @include mq() {
+    margin-top: rem(68);
+  }
+}
+
+.p-works__see-more-btn {
+  margin-top: rem(93);
+  @include mq() {
+    margin-top: rem(153);
+
+  }
+}

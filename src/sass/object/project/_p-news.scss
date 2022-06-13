@@ -1,0 +1,13 @@
+@use "global" as *;
+
+.p-news {
+  text-align: center;
+}
+
+.p-news__news-items {
+  margin-top: rem(38);
+  @include mq() {
+    margin-top: rem(62);
+  }
+}
+

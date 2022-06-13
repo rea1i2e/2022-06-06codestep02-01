@@ -1,0 +1,33 @@
+@use "global" as *;
+
+.l-header {
+  position: absolute;
+  width: 100%;
+  // height: rem(82);
+  @include mq() {
+    height: rem(270);
+    // height: rem(100);
+  }
+}
+
+.l-header.is-fixed {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  animation: fadeInAnime 0.3s;
+  z-index: 1;
+  @include mq() {
+    height: rem(100);
+  }
+}
+
+@keyframes fadeInAnime{
+  0% {
+    transform: translateY(#{rem(-100)});
+  }
+  
+  100% {
+    transform: translateY(0);
+  }
+}

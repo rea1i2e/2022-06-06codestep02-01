@@ -1,0 +1,10 @@
+@use "global" as *;
+
+.p-footer {
+  padding-top: rem(8);
+  padding-bottom: rem(10);
+  background-color: $black;
+  color: $white;
+  text-align: center;
+}
+

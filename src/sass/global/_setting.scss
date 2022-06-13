@@ -4,12 +4,13 @@
 // インナー幅設定
 ////////////////////
 // コンテンツのインナー幅（最も共通の幅が多い部分）
-$inner: 1100px;
+$inner: 960px;
 // ※キャンパス幅ではなくインナーの幅を指す
 
 // 余白
-$padding-pc: 25px;
-$padding-sp: 20px;
+$padding-pc: 5.5%;
+$padding-pc: 100% * math.div( 60, 1280);
+$padding-sp: 4%;
 // ※PC時：デザインカンプの余白の幅ではない。PC時は通常25pxで大丈夫！
 
 
@@ -17,7 +18,7 @@ $padding-sp: 20px;
 // フォント設定
 ////////////////////
 
-$base-font-family: "";
+$base-font-family: "Arial", sans-serif;
 $second-font-family: "";
 // ※検証ツールでしっかり反映されているか確認する
 
@@ -26,8 +27,8 @@ body {
 }
 
 // フォントウェイト
-$regular: 300;
-$normal: 400;
+$regular: 400;
+// $normal: 400;
 $bold: 700;
 
 ////////////////////
@@ -35,7 +36,8 @@ $bold: 700;
 ////////////////////
 
 //色指定（共通性のあるものは出来る限り指定すると良い）
-$black: #111;
+$black: #24292E; // ナビ文字色
+$gray: #C8C8C8; // 罫線の色
 $white: #fff;
 
 
@@ -46,7 +48,7 @@ $white: #fff;
 //ブレイクポイント
 $breakpoints: (
   sm: 600,
-  md: 768,
+  md: 600,
   lg: 1024,
   xl: 1440,
 );
@@ -90,4 +92,11 @@ $mediaquerys: (
   @include mq("md") {
     display: none;
   }
+}
+
+body {
+  position: relative;
+  color: $black;
+  font-family: $base-font-family;
+  font-size: rem(14.4);
 }

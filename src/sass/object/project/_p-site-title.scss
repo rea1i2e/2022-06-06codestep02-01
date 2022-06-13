@@ -1,0 +1,10 @@
+@use "global" as *;
+
+.p-site-title__link {
+  display: block;
+  padding-top: rem(20);
+  padding-bottom: rem(4);
+  @include mq() {
+    padding-bottom: rem(20);
+  }
+}

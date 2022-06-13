@@ -1,0 +1,34 @@
+@use "global" as *;
+@use "sass:math";
+
+.p-mainview {
+  // padding-top: rem(82);
+  @include mq() {
+    // padding-top: rem(270);
+    transition: all 1s;
+  }
+}
+
+.p-mainview img {
+  height: 100%;
+  object-fit: cover;
+    padding-top: rem(82);
+    @include mq() {
+      padding-top: rem(270);
+      // padding-top: rem(100);
+    }
+}
+
+// 固定ヘッダーが表示されたら、メインビューの領域をヘッダーの高さが縮んだ分低くする
+.p-mainview.is-short {
+  @include mq() {
+    height: rem(520);
+    transform: scaleY(math.div(520, 690))
+  }
+}
+
+// .p-mainview.is-short img {
+//   @include mq() {
+//     padding-top: rem(100);
+//   }
+// }

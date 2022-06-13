@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <meta name="format-detection" content="telephone=no" />
+  <meta name="robots" content="noindex">
   <!-- meta情報 -->
-  <title>CodeUps</title>
+  <title>2022-06-06codestep02-01</title>
   <meta name="description" content="" />
   <meta name="keywords" content="" />
   <!-- ogp -->
@@ -16,16 +18,207 @@
   <meta property="og:site_name" content="" />
   <meta property="og:description" content="" />
   <!-- ファビコン -->
-  <link rel="”icon”" href="" />
+  <!-- <link rel="”icon”" href="" /> -->
   <!-- css -->
   <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/mailform.css">
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script defer src="./js/script.js"></script>
 </head>
+
 <body>
-  <div class="inner">
-  <p class="test">変更のテスト</p>
-</div>
+  <header class="l-header p-header js-header">
+    <div class="p-header__inner l-inner">
+      <h1 class="p-header__site-title p-site-title">
+        <a class="p-site-title__link" href="#">
+          <img class="c-logo" src="images/logo.svg" alt="サイトロゴ">
+        </a>
+      </h1>
+      <nav class="p-header__nav">
+        <ul class="p-header__nav-items">
+          <li class="p-header__nav-item">
+            <a href="#about" class="p-header__nav-link">
+              About
+            </a>
+          </li>
+          <li class="p-header__nav-item">
+            <a href="#works" class="p-header__nav-link">
+              Works
+            </a>
+          </li>
+          <li class="p-header__nav-item">
+            <a href="#news" class="p-header__nav-link">
+              News
+            </a>
+          </li>
+          <li class="p-header__nav-item">
+            <a href="#contact" class="p-header__nav-link">
+              Contact
+            </a>
+          </li>
+          <li class="p-header__nav-item">
+            <a href="#" class="p-header__nav-link p-header__nav-item--instagram">
+              <img class="c-icon-instagram" src="images/icon-instagram.svg" alt="インスタグラム">
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="l-mainview p-mainview js-mainview">
+    <img src="images/mainview.jpg" alt="ボルネオの川の写真">
+  </div>
+
+  <section class="l-about p-about" id="about">
+    <div class="p-about__inner l-inner">
+      <h2 class="p-works__section-title c-section-title">About</h2>
+      <h3 class="p-about__name">
+        Xxxxx Ashley
+      </h3>
+      <p class="p-about__address">
+        2th Floor xxxxx Building x-x-x Nishiazabu,<br class="u-mobile">
+        Minato-ku, Tokyo 106-0031 Japan<br>
+        tel: 000-0000-0000<br>
+        url: www.xxxxxx.jp<br>
+        mail: xxx@xxxxxx.jp
+      </p>
+      <p class="p-about__description">
+        プロフィールテキストテキストテキストテキストテキストテキストテキストテキストテキストストテキスト
+        テキストテキストテキストストテキストテキストテキストテキストストテキストテキストテキストテキスト
+        ストテキストテキストテキストテキストストテキストテキストテキストテキストスト
+      </p>
+
+    </div>
+  </section>
+
+  <section class="l-works p-works" id="works">
+    <div class="p-works__inner l-inner">
+      <h2 class="p-works__section-title c-section-title">Works</h2>
+      <ul class="p-works__items p-items">
+        <li class="p-items__item p-item">
+          <div class="c-picture">
+            <img src="images/picture01.jpg" alt="ボルネオ象">
+          </div>
+        </li>
+        <li class="p-items__item p-item">
+          <div class="c-picture">
+            <img src="images/picture02.jpg" alt="オランウータン">
+          </div>
+        </li>
+        <li class="p-items__item p-item">
+          <div class="c-picture">
+            <img src="images/picture03.jpg" alt="テングザル">
+          </div>
+        </li>
+        <li class="p-items__item p-item">
+          <div class="c-picture">
+            <img src="images/picture04.jpg" alt="ラフレシアン">
+          </div>
+        </li>
+        <li class="p-items__item p-item">
+          <div class="c-picture">
+            <img src="images/picture05.jpg" alt="サイチョウ">
+          </div>
+        </li>
+        <li class="p-items__item p-item">
+          <div class="c-picture">
+            <img src="images/picture06.jpg" alt="マーケット">
+          </div>
+        </li>
+      </ul>
+      <!-- <button class="p-works__see-more-btn c-see-more-btn">See More</button> -->
+    </div>
+  </section>
+
+  <section class="l-news p-news" id="news">
+    <div class="p-news__inner l-inner">
+      <h2 class="p-contact__section-title c-section-title">
+        News
+      </h2>
+      <ul class="p-news__news-items p-news-items">
+        <li class="p-news-items p-news-item">
+          <time class="p-news-item__date" datetime="2022-06-10">
+            2022.06.10
+          </time>
+          <p class="p-news-item__information">
+            デザイン雑誌「ＸＸＸＸＸＸ Vol.11』に掲載していただきました。
+          </p>
+        </li>
+        <li class="p-news-items p-news-item">
+          <time class="p-news-item__date" datetime="2022-06-10">
+            2022.06.10
+          </time>
+          <p class="p-news-item__information">
+            ＸＸ月ＸＸ日から写真集「ＸＸＸＸＸＸＸ」の販売を開始します。
+          </p>
+        </li>
+        <li class="p-news-items p-news-item">
+          <time class="p-news-item__date" datetime="2022-06-10">
+            2022.06.10
+          </time>
+          <p class="p-news-item__information">
+            【イベント開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト
+          </p>
+        </li>
+        <li class="p-news-items p-news-item">
+          <time class="p-news-item__date" datetime="2022-06-10">
+            2022.06.10
+          </time>
+          <p class="p-news-item__information">
+            デザイン雑誌「ＸＸＸＸＸＸ Vol.10』に掲載していただきました。
+          </p>
+        </li>
+        <li class="p-news-items p-news-item">
+          <time class="p-news-item__date" datetime="2022-06-10">
+            2022.06.10
+          </time>
+          <p class="p-news-item__information">
+            【個展開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト
+          </p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="l-contact p-contact" id="contact">
+    <div class="p-contact__inner l-inner">
+      <h2 class="p-contact__section-title c-section-title">
+        Contact
+      </h2>
+
+      <form action="mailform-v8.0.1/php/mailform.php" method="post" class="p-contact__mail-form p-mail-form" id="mail_form">
+        <dl>
+          <dt class="p-mail-form__label"><i></i>name</dt>
+          <dd class="p-mail-form__data required"><input type="text" name="name_1" value="" /></dd>
+        </dl>
+        <dl>
+          <dt class="p-mail-form__label"><i></i>E-mail</dt>
+          <dd class="p-mail-form__data required"><input type="email" name="mail_address" value="" /></dd>
+        </dl>
+        <dl>
+          <dt class="p-mail-form__label"><i></i>message</dt>
+          <dd class="p-mail-form__data required"><textarea name="contents" cols="40" rows="5"></textarea></dd>
+        </dl>
+        <p id="form_submit"><input type="button" id="form_submit_button" value="送信" /></p>
+      </form>
+
+
+
+
+
+    </div>
+  </section>
+
+  <footer class="l-footer p-footer">
+    <p class="p-footer__copyright c-copyright">
+      © 2020 My Work
+    </p>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="mailform-v8.0.1/js/mailform-js.php"></script>
 </body>
+
 </html>

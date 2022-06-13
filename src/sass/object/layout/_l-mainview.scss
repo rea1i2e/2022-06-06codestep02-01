@@ -1,0 +1,11 @@
+@use "global" as *;
+
+.l-mainview {
+  width: 100%;
+  // height: rem(420);
+  height: rem(502); // header分の82pxを含む高さ
+  @include mq() {
+    height: rem(690); // header分の270pxを含む高さ
+    // height: rem(570); // header分の100pxを含む高さ
+  }
+}

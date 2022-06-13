@@ -1,0 +1,21 @@
+@use "global" as *;
+
+.c-see-more-btn {
+  display: inline-block;
+  position: relative;
+  padding: 0;
+  font-size: rem(14.4);
+  line-height: 1;
+}
+
+.c-see-more-btn::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background-color: $black;
+}

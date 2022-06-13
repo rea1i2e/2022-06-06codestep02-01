@@ -1,0 +1,77 @@
+@use "global" as *;
+
+.p-header {
+  background-color: $white;
+}
+
+.p-header__inner.l-inner {
+  display: flex;
+  flex-direction: column;
+  // height: 100%;;
+  @include mq() {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    padding-right: 5.5%;
+    padding-left: 5.5%;
+  }
+}
+
+.p-header__site-title {
+  width: rem(120);
+  margin-right: auto;
+  margin-left: auto;
+  @include mq() {
+    margin-left: 0;
+  }
+}
+
+// .p-header__nav {
+//   height: rem(35);
+// }
+
+.p-header__nav-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: rem(12.8);
+  // height: 100%;
+  @include mq() {
+    margin-right: rem(-15); // クリック領域をpaddingで確保しているため、ネガティブマージンで調整
+    font-size: rem(14.4);
+
+  }
+}
+
+// .p-header__nav-item {
+//   height: 100%;
+// }
+
+.p-header__nav-link {
+  display: block;
+  // height: 100%;
+  // padding: rem(9.1) rem(10);
+  padding-top: rem(4);
+  padding-right: rem(10);
+  padding-bottom: rem(7.81);
+  padding-left: rem(10);
+  @include mq() {
+    padding-top: rem(10);
+    padding-right: rem(15);
+    padding-left: rem(15);
+  }
+}
+.p-header__nav-item--instagram {
+  width: rem(40);
+  padding: rem(3) rem(10) rem(8);
+  @include mq() {
+    width: rem(50);
+    padding-top: rem(10);
+    padding-right: rem(15);
+    padding-left: rem(15);
+  }
+
+}
+

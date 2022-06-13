@@ -1,0 +1,26 @@
+@use "global" as *;
+
+.p-news-item {
+  padding: rem(14) rem(16) rem(10) rem(15);
+  border-top: 1px solid $gray;
+  @include mq() {
+    display: flex;
+    align-items: flex-start;
+    padding-top: rem(14);
+  }
+}
+.p-news-item:last-child {
+  border-bottom: 1px solid $gray;
+}
+
+// .p-news-item__date {
+//   line-height: 1;
+// }
+
+.p-news-item__information {
+  margin-top: rem(-7);
+  @include mq() {
+    margin-left: rem(88);
+    margin-top: 0;
+  }
+}

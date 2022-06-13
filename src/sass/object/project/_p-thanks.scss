@@ -1,0 +1,19 @@
+@use "global" as *;
+
+.p-thanks {
+  padding-top: rem(60);
+  text-align: center;
+}
+
+.p-thanks__description {
+  margin-top: rem(30);
+}
+
+.p-thanks__back {
+  margin-top: rem(30);
+}
+
+.p-thanks__back a {
+  color: blue;
+  text-decoration: underline;
+}

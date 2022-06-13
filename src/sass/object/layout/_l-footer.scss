@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.l-footer {
+  margin-top: rem(70);
+  @include mq() {
+    margin-top: rem(130);
+  }
+}

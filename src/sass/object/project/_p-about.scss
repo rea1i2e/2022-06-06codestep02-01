@@ -1,0 +1,35 @@
+@use "global" as *;
+@use "sass:math";
+
+.p-about {
+  text-align: center;
+}
+
+.p-about__name {
+  margin-top: rem(40);
+  font-size: rem(14.4);
+  font-weight: $regular;
+  line-height: 1;
+  text-align: left;
+  @include mq() {
+    margin-top: rem(64);
+  }
+}
+
+.p-about__address {
+  margin-top: rem(29);
+  line-height: math.div( 16, 14.4);
+  text-align: left;
+  @include mq() {
+    margin-top: rem(30);
+  }
+}
+
+.p-about__description {
+  margin-top: rem(27);
+  line-height: 1.75;
+  text-align: left;
+  // @include mq() {
+  //   margin-top: rem(30);
+  // }
+}
